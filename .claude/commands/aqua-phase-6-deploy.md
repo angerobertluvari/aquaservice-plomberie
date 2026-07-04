@@ -13,7 +13,8 @@ dernier, avec le propriétaire** — ne pas déployer sans validation.
 3. Vérifier `.env.example` et documenter dans le `README.md` les variables à renseigner sur Vercel
    (`RESEND_API_KEY`, `CONTACT_TO_EMAIL`).
 4. Vérifier `next.config` (domaines d'images, etc.) et les métadonnées de prod.
-5. Récapitulatif des étapes Vercel (Add New Project → importer le dépôt → variables d'env → Deploy → domaine).
+5. Récapitulatif des étapes Vercel (Add New Project → importer le dépôt → variables d'env → Deploy).
+   Cible : **URL `.vercel.app` par défaut** (pas de domaine personnalisé pour l'instant).
 
 ## Validation
 - Build de prod OK et checklist déploiement prête.

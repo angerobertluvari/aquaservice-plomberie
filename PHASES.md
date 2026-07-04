@@ -48,7 +48,7 @@ Statut : `[ ]` à faire · `[~]` en cours · `[x]` terminé
 - [ ] JSON-LD `LocalBusiness` (schema.org)
 - [ ] `sitemap.ts`, `robots.ts`
 - [ ] Favicon / icônes, accessibilité (labels, aria), remplacement icônes texte → Lucide
-- [ ] Page mentions légales / RGPD (si retenu)
+- [ ] Page mentions légales / RGPD + lien footer (confirmé)
 
 ## Phase 6 — Préparation déploiement  — `/aqua-phase-6-deploy`
 - [ ] `npm run build` propre, lint OK, pas d'erreurs TS

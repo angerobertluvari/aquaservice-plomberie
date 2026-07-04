@@ -16,8 +16,9 @@ Objectif : optimiser le référencement local et peaufiner qualité/accessibilit
 5. **Icônes** : remplacer les caractères texte (❄ ✓ ⚡ ◎ ☎ ✉ ◷) par un jeu cohérent **Lucide**
    (`lucide-react`) là où pertinent, en conservant le rendu du design. Garder la « goutte » en CSS.
 6. **Favicon** / icône d'app.
-7. **Page mentions légales / RGPD** (`app/mentions-legales/page.tsx`) + lien discret dans le footer,
-   si retenu avec le propriétaire.
+7. **Page mentions légales / RGPD** (`app/mentions-legales/page.tsx`) + lien discret dans le footer
+   (confirmé). Gabarit à compléter par le propriétaire : raison sociale, SIRET, RCS, assurance,
+   hébergeur (Vercel), directeur de publication, données personnelles du formulaire.
 
 ## Validation
 - Lighthouse SEO/A11y corrects, pas de warnings console.
