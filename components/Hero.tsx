@@ -1,8 +1,6 @@
 import { PHONE_TEL } from "@/lib/site";
+import HeroCarousel from "@/components/HeroCarousel";
 
-/* eslint-disable @next/next/no-img-element */
-// Phase 2 : carrousel statique (1re image). Le passage à next/image + le
-// défilement automatique arrivent en Phase 3.
 export default function Hero() {
   return (
     <section
@@ -59,26 +57,7 @@ export default function Hero() {
 
         {/* Colonne visuelle */}
         <div className="relative">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-visual border border-aqua-line bg-ink shadow-visual">
-            <img
-              src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=85"
-              alt="Villa méditerranéenne avec piscine"
-              referrerPolicy="no-referrer"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[42%] bg-[linear-gradient(to_top,rgba(9,28,44,.8),transparent)]" />
-            <div className="absolute inset-x-4 bottom-4 flex items-center justify-between gap-3">
-              <span className="text-[13px] font-semibold text-white [text-shadow:0_1px_8px_rgba(0,0,0,.45)]">
-                Villas &amp; résidences · Corse-du-Sud
-              </span>
-              <div className="flex gap-[7px]">
-                <span className="h-[7px] w-[22px] rounded-[99px] bg-white" />
-                <span className="h-[7px] w-[7px] rounded-[99px] bg-[rgba(255,255,255,.5)]" />
-                <span className="h-[7px] w-[7px] rounded-[99px] bg-[rgba(255,255,255,.5)]" />
-                <span className="h-[7px] w-[7px] rounded-[99px] bg-[rgba(255,255,255,.5)]" />
-              </div>
-            </div>
-          </div>
+          <HeroCarousel />
           <div className="absolute -right-[14px] -top-[14px] flex items-center gap-[11px] rounded-[16px] border border-line-soft bg-white px-4 py-[13px] shadow-[0_16px_34px_-14px_rgba(15,46,70,.3)]">
             <span className="flex h-[38px] w-[38px] flex-none items-center justify-center rounded-[11px] bg-success-bg text-[19px] text-success">
               ✓

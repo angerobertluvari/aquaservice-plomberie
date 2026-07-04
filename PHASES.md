@@ -32,11 +32,11 @@ Statut : `[ ]` à faire · `[~]` en cours · `[x]` terminé
 - [x] `FloatingEmergency` (bouton flottant global + animation pulseRing)
 - [x] Responsive fluide via `clamp()` (vérifier mobile/desktop)
 
-## Phase 3 — Interactivité  — `/aqua-phase-3-interactive`
-- [ ] Carrousel hero client (`useState` + `useEffect`, auto 4,5 s, points, légende, réarmement timer)
-- [ ] `next/image` sur les slides (priority sur la 1re)
-- [ ] Toggle Devis/Urgence (état + styles actifs)
-- [ ] Formulaire : React Hook Form + Zod, états loading/success/error, bandeau succès
+## Phase 3 — Interactivité  — `/aqua-phase-3-interactive` ✅
+- [x] Carrousel hero client (`useState` + `useEffect`, auto 4,5 s, points, légende, réarmement timer)
+- [x] `next/image` sur les slides (priority sur la 1re)
+- [x] Toggle Devis/Urgence (état + styles actifs)
+- [x] Formulaire : React Hook Form + Zod, états loading/success/error, bandeau succès
 
 ## Phase 4 — API contact / email  — `/aqua-phase-4-api`
 - [ ] `app/api/contact/route.ts` (validation Zod côté serveur)

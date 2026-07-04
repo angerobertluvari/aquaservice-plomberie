@@ -1,11 +1,5 @@
 import { ARTISAN, EMAIL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
-
-// Phase 2 : squelette statique du formulaire (état par défaut « Devis » actif).
-// La logique React Hook Form + Zod et le toggle Devis/Urgence arrivent en Phase 3.
-const inputClass =
-  "rounded-field border border-[#d6e6ec] bg-offwhite px-[13px] py-3 text-[14px] font-medium text-ink outline-none";
-const fieldClass =
-  "flex flex-col gap-[6px] text-[12px] font-bold text-ink";
+import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   return (
@@ -74,60 +68,8 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Formulaire (squelette statique) */}
-        <form className="flex flex-col gap-[15px] rounded-card border border-aqua-line-2 bg-white p-[clamp(1.4rem,3vw,2.1rem)] shadow-[0_26px_50px_-34px_rgba(15,46,70,.45)]">
-          <div>
-            <label className="mb-[6px] block text-[12px] font-bold text-ink">
-              Type de demande
-            </label>
-            <div className="grid grid-cols-2 gap-2">
-              <button
-                type="button"
-                className="rounded-field border-[1.5px] border-aqua bg-aqua p-3 text-[14px] font-bold text-white"
-              >
-                Devis
-              </button>
-              <button
-                type="button"
-                className="rounded-field border-[1.5px] border-[#d6e6ec] bg-offwhite p-3 text-[14px] font-bold text-muted"
-              >
-                Urgence
-              </button>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-3">
-            <label className={fieldClass}>
-              Nom
-              <input type="text" placeholder="Votre nom" className={inputClass} />
-            </label>
-            <label className={fieldClass}>
-              Téléphone
-              <input type="tel" placeholder="06 XX XX XX XX" className={inputClass} />
-            </label>
-          </div>
-          <label className={fieldClass}>
-            Email
-            <input type="email" placeholder="vous@email.com" className={inputClass} />
-          </label>
-          <label className={fieldClass}>
-            Message
-            <textarea
-              rows={4}
-              placeholder="Décrivez votre besoin (fuite, installation clim, entretien…)"
-              className={`${inputClass} resize-y`}
-            />
-          </label>
-          <button
-            type="submit"
-            className="mt-1 cursor-pointer rounded-[13px] bg-ink p-[15px] text-[15.5px] font-bold text-white"
-          >
-            Envoyer ma demande
-          </button>
-          <p className="text-center text-[11.5px] text-[#8aa5b3]">
-            Réponse sous 24h ouvrées · Devis gratuit et sans engagement
-          </p>
-        </form>
+        {/* Formulaire interactif (React Hook Form + Zod) */}
+        <ContactForm />
       </div>
     </section>
   );
