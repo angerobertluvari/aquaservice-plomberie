@@ -1,4 +1,5 @@
 import { Snowflake, Sparkles } from "lucide-react";
+import Logo from "@/components/Logo";
 
 type Line = { n: string; title: string; text: string; accent?: boolean };
 
@@ -55,7 +56,7 @@ export default function Services() {
         {/* Plomberie */}
         <div className="rounded-card border border-aqua-line-2 bg-white p-[clamp(1.4rem,3vw,2rem)] shadow-card">
           <div className="mb-[18px] flex items-center gap-[13px]">
-            <span className="h-[46px] w-[46px] flex-none rotate-45 rounded-[50%_50%_50%_6px] bg-[linear-gradient(150deg,#16a3b8,#0e7c96)] shadow-[0_8px_18px_rgba(14,124,150,.35)]" />
+            <Logo size={46} className="flex-none drop-shadow-[0_8px_18px_rgba(14,124,150,.35)]" />
             <h3 className="text-[22px] font-bold">Plomberie</h3>
           </div>
           <div className="flex flex-col gap-[11px]">

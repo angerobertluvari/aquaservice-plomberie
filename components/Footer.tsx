@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "@/components/Logo";
 import { EMAIL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 const zones = ["Ajaccio", "Porto-Vecchio", "Bonifacio", "Propriano", "Sartène", "Zonza"];
@@ -9,7 +10,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-[1180px] grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-7">
         <div className="max-w-[30ch]">
           <div className="flex items-center gap-[11px]">
-            <span className="h-[24px] w-[24px] flex-none rotate-45 rounded-[50%_50%_50%_3px] bg-[linear-gradient(150deg,#16a3b8,#0e7c96)]" />
+            <Logo size={26} className="flex-none" />
             <strong className="font-display text-[19px] text-white">Aqua Service</strong>
           </div>
           <p className="mt-[14px] text-[13.5px] leading-[1.6]">
