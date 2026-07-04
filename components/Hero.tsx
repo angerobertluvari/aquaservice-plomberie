@@ -1,4 +1,5 @@
-import { PHONE_TEL } from "@/lib/site";
+import { Check, Phone } from "lucide-react";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import HeroCarousel from "@/components/HeroCarousel";
 
 export default function Hero() {
@@ -26,9 +27,10 @@ export default function Hero() {
           <div className="mt-7 flex flex-wrap gap-3">
             <a
               href={PHONE_TEL}
+              aria-label={`Appeler en urgence au ${PHONE_DISPLAY}`}
               className="inline-flex items-center gap-[10px] rounded-btn bg-coral px-6 py-[15px] text-[16px] font-bold text-white no-underline shadow-coral"
             >
-              <span className="text-[18px]">☎</span> Appel d&apos;urgence
+              <Phone size={18} strokeWidth={2.4} aria-hidden="true" /> Appel d&apos;urgence
             </a>
             <a
               href="#contact"
@@ -59,8 +61,8 @@ export default function Hero() {
         <div className="relative">
           <HeroCarousel />
           <div className="absolute -right-[14px] -top-[14px] flex items-center gap-[11px] rounded-[16px] border border-line-soft bg-white px-4 py-[13px] shadow-[0_16px_34px_-14px_rgba(15,46,70,.3)]">
-            <span className="flex h-[38px] w-[38px] flex-none items-center justify-center rounded-[11px] bg-success-bg text-[19px] text-success">
-              ✓
+            <span className="flex h-[38px] w-[38px] flex-none items-center justify-center rounded-[11px] bg-success-bg text-success">
+              <Check size={20} strokeWidth={2.6} aria-hidden="true" />
             </span>
             <span className="text-[12.5px] leading-[1.35] text-ink-soft">
               <strong className="text-ink">Devis gratuit</strong>

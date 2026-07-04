@@ -1,3 +1,4 @@
+import { Clock, Mail, MapPin } from "lucide-react";
 import { ARTISAN, EMAIL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import ContactForm from "@/components/ContactForm";
 
@@ -25,6 +26,7 @@ export default function Contact() {
 
           <a
             href={PHONE_TEL}
+            aria-label={`Appeler en urgence au ${PHONE_DISPLAY}`}
             className="block rounded-[20px] bg-[linear-gradient(155deg,#f0603a,#d94a28)] p-6 text-white no-underline shadow-[0_20px_40px_-22px_rgba(240,96,58,.7)]"
           >
             <span className="text-[12px] font-bold uppercase tracking-[.14em] opacity-85">
@@ -40,7 +42,7 @@ export default function Contact() {
 
           <div className="flex flex-col gap-[13px] rounded-[18px] border border-aqua-line-2 bg-white p-5">
             <div className="flex items-start gap-3">
-              <span className="text-[17px] text-aqua">✉</span>
+              <Mail size={18} className="mt-[2px] flex-none text-aqua" aria-hidden="true" />
               <div>
                 <strong className="text-[14px]">Email</strong>
                 <br />
@@ -49,7 +51,7 @@ export default function Contact() {
             </div>
             <div className="h-px bg-[#eef5f8]" />
             <div className="flex items-start gap-3">
-              <span className="text-[17px] text-aqua">◎</span>
+              <MapPin size={18} className="mt-[2px] flex-none text-aqua" aria-hidden="true" />
               <div>
                 <strong className="text-[14px]">Zone d&apos;intervention</strong>
                 <br />
@@ -58,7 +60,7 @@ export default function Contact() {
             </div>
             <div className="h-px bg-[#eef5f8]" />
             <div className="flex items-start gap-3">
-              <span className="text-[17px] text-aqua">◷</span>
+              <Clock size={18} className="mt-[2px] flex-none text-aqua" aria-hidden="true" />
               <div>
                 <strong className="text-[14px]">Horaires</strong>
                 <br />

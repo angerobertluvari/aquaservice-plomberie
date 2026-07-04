@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { EMAIL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 const zones = ["Ajaccio", "Porto-Vecchio", "Bonifacio", "Propriano", "Sartène", "Zonza"];
@@ -24,7 +25,11 @@ export default function Footer() {
           <strong className="text-[13px] tracking-[.05em] text-white">Coordonnées</strong>
           <ul className="mt-[14px] flex list-none flex-col gap-[9px] p-0 text-[13.5px]">
             <li>
-              <a href={PHONE_TEL} className="font-semibold text-accent-light no-underline">
+              <a
+                href={PHONE_TEL}
+                aria-label={`Appeler Aqua Service au ${PHONE_DISPLAY}`}
+                className="font-semibold text-accent-light no-underline"
+              >
                 {PHONE_DISPLAY}
               </a>
             </li>
@@ -53,8 +58,11 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="mx-auto mt-[26px] max-w-[1180px] border-t border-[rgba(255,255,255,.1)] pt-[18px] text-[12px] text-footer-muted">
-        © 2026 Aqua Service · Corse-du-Sud
+      <div className="mx-auto mt-[26px] flex max-w-[1180px] flex-wrap items-center justify-between gap-2 border-t border-[rgba(255,255,255,.1)] pt-[18px] text-[12px] text-footer-muted">
+        <span>© 2026 Aqua Service · Corse-du-Sud</span>
+        <Link href="/mentions-legales" className="text-footer-muted no-underline hover:text-footer-ink">
+          Mentions légales
+        </Link>
       </div>
     </footer>
   );

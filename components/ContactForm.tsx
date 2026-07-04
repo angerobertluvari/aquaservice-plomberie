@@ -5,6 +5,7 @@
 /* eslint-disable react-hooks/incompatible-library */
 
 import { useState } from "react";
+import { Check } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactSchema, type ContactInput } from "@/lib/contact-schema";
@@ -60,7 +61,7 @@ export default function ContactForm() {
       {status === "success" && (
         <div className="flex items-center gap-[11px] rounded-[14px] border border-success-line bg-success-bg px-4 py-[14px]">
           <span className="flex h-[30px] w-[30px] flex-none items-center justify-center rounded-full bg-success text-white">
-            ✓
+            <Check size={17} strokeWidth={2.6} aria-hidden="true" />
           </span>
           <span className="text-[13.5px] text-success-ink">
             <strong>Demande envoyée&nbsp;!</strong> Nous vous recontactons au plus vite.

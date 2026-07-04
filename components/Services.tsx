@@ -1,3 +1,5 @@
+import { Snowflake, Sparkles } from "lucide-react";
+
 type Line = { n: string; title: string; text: string; accent?: boolean };
 
 const plomberie: Line[] = [
@@ -11,7 +13,7 @@ const climatisation: Line[] = [
   { n: "01", title: "Installation", text: "Climatiseurs réversibles mono & multi-split, dimensionnés pour votre logement." },
   { n: "02", title: "Entretien", text: "Contrat d'entretien annuel, nettoyage et recharge de gaz." },
   { n: "03", title: "Réparation", text: "Diagnostic et remise en service de votre unité, toutes marques." },
-  { n: "✦", title: "Confort été comme hiver", text: "Le réversible chauffe aussi — idéal sous le climat corse.", accent: true },
+  { n: "", title: "Confort été comme hiver", text: "Le réversible chauffe aussi — idéal sous le climat corse.", accent: true },
 ];
 
 function ServiceLine({ n, title, text, accent }: Line) {
@@ -22,7 +24,9 @@ function ServiceLine({ n, title, text, accent }: Line) {
         (accent ? "border border-dashed border-[#c9e5ee] bg-aqua-light" : "bg-offwhite-2")
       }
     >
-      <span className="font-extrabold text-aqua-deep">{n}</span>
+      <span className="flex items-center font-extrabold text-aqua-deep">
+        {accent ? <Sparkles size={16} strokeWidth={2.4} aria-hidden="true" /> : n}
+      </span>
       <div>
         <strong className="text-[15px]">{title}</strong>
         <p className="mt-[3px] text-[13.5px] text-muted">{text}</p>
@@ -64,8 +68,8 @@ export default function Services() {
         {/* Climatisation */}
         <div className="rounded-card border border-aqua-line-2 bg-white p-[clamp(1.4rem,3vw,2rem)] shadow-card">
           <div className="mb-[18px] flex items-center gap-[13px]">
-            <span className="flex h-[46px] w-[46px] flex-none items-center justify-center rounded-[14px] bg-[linear-gradient(150deg,#3fc6d8,#16a3b8)] text-[22px] font-bold text-white shadow-[0_8px_18px_rgba(22,163,184,.35)]">
-              ❄
+            <span className="flex h-[46px] w-[46px] flex-none items-center justify-center rounded-[14px] bg-[linear-gradient(150deg,#3fc6d8,#16a3b8)] text-white shadow-[0_8px_18px_rgba(22,163,184,.35)]">
+              <Snowflake size={24} strokeWidth={2.2} aria-hidden="true" />
             </span>
             <h3 className="text-[22px] font-bold">Climatisation</h3>
           </div>

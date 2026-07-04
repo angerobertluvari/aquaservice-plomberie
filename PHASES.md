@@ -43,12 +43,12 @@ Statut : `[ ]` à faire · `[~]` en cours · `[x]` terminé
 - [x] Intégration Resend + mode dégradé sans clé
 - [x] Branchement du formulaire (POST, gestion erreurs)
 
-## Phase 5 — SEO & finitions  — `/aqua-phase-5-seo`
-- [ ] `metadata` complet (title/description « plombier Corse-du-Sud »), OpenGraph
-- [ ] JSON-LD `LocalBusiness` (schema.org)
-- [ ] `sitemap.ts`, `robots.ts`
-- [ ] Favicon / icônes, accessibilité (labels, aria), remplacement icônes texte → Lucide
-- [ ] Page mentions légales / RGPD + lien footer (confirmé)
+## Phase 5 — SEO & finitions  — `/aqua-phase-5-seo` ✅
+- [x] `metadata` complet (title/description « plombier Corse-du-Sud »), OpenGraph
+- [x] JSON-LD `LocalBusiness` (schema.org)
+- [x] `sitemap.ts`, `robots.ts`
+- [x] Favicon / icônes, accessibilité (labels, aria), remplacement icônes texte → Lucide
+- [x] Page mentions légales / RGPD + lien footer (confirmé)
 
 ## Phase 6 — Préparation déploiement  — `/aqua-phase-6-deploy`
 - [ ] `npm run build` propre, lint OK, pas d'erreurs TS

@@ -16,6 +16,7 @@ export default function Header() {
       </a>
       <a
         href={PHONE_TEL}
+        aria-label={`Appeler Aqua Service au ${PHONE_DISPLAY}`}
         className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-ink px-4 py-[10px] text-[14px] font-bold text-white no-underline"
       >
         <span className="h-[7px] w-[7px] rounded-full bg-mint shadow-[0_0_0_3px_rgba(63,214,168,.25)]" />
