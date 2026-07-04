@@ -59,35 +59,47 @@
   --shadow-visual: 0 30px 60px -30px rgba(14, 124, 150, 0.4);
 }
 
-/* ---- Base ---- */
-* {
-  box-sizing: border-box;
-}
+/* ---- Base ----
+   Placé dans @layer base : les utilitaires Tailwind (@layer utilities) restent
+   ainsi prioritaires. Sinon une règle non-layerée comme `a { color: inherit }`
+   écraserait `text-white` & co. sur tous les liens. */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  margin: 0;
-  font-family: var(--font-sans);
-  color: var(--color-ink);
-  background: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.5;
-}
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
 
-h1,
-h2,
-h3 {
-  font-family: var(--font-display);
-  line-height: 1.08;
-  letter-spacing: -0.01em;
-  margin: 0;
-}
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
 
-a {
-  color: inherit;
+  a {
+    color: inherit;
+  }
+
+  input,
+  textarea,
+  button,
+  select {
+    font-family: inherit;
+  }
 }
 
 /* ---- Focus visible (accessibilité clavier) ---- */
@@ -95,13 +107,6 @@ a {
   outline: 2px solid var(--color-aqua);
   outline-offset: 2px;
   border-radius: 4px;
-}
-
-input,
-textarea,
-button,
-select {
-  font-family: inherit;
 }
 
 /* ---- Keyframes ---- */
