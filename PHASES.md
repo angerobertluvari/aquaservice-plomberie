@@ -22,15 +22,15 @@ Statut : `[ ]` à faire · `[~]` en cours · `[x]` terminé
 - [x] `.env.example`
 - [x] `npm run build` réussit + `npm run lint` propre
 
-## Phase 2 — Sections statiques (pixel-faithful)  — `/aqua-phase-2-sections`
-- [ ] `Header` (sticky, logo goutte, bouton téléphone)
-- [ ] `Hero` (chip, H1, CTA, stats, colonne visuelle + badge « Devis gratuit ») — carrousel statique 1re image
-- [ ] `Services` (cartes Plomberie & Climatisation)
-- [ ] `Pourquoi` (bloc sombre, 4 cartes)
-- [ ] `Contact` (colonne urgence/coordonnées + squelette formulaire)
-- [ ] `Footer`
-- [ ] `FloatingEmergency` (bouton flottant global + animation pulseRing)
-- [ ] Responsive fluide via `clamp()` (vérifier mobile/desktop)
+## Phase 2 — Sections statiques (pixel-faithful)  — `/aqua-phase-2-sections` ✅
+- [x] `Header` (sticky, logo goutte, bouton téléphone)
+- [x] `Hero` (chip, H1, CTA, stats, colonne visuelle + badge « Devis gratuit ») — carrousel statique 1re image
+- [x] `Services` (cartes Plomberie & Climatisation)
+- [x] `Pourquoi` (bloc sombre, 4 cartes)
+- [x] `Contact` (colonne urgence/coordonnées + squelette formulaire)
+- [x] `Footer`
+- [x] `FloatingEmergency` (bouton flottant global + animation pulseRing)
+- [x] Responsive fluide via `clamp()` (vérifier mobile/desktop)
 
 ## Phase 3 — Interactivité  — `/aqua-phase-3-interactive`
 - [ ] Carrousel hero client (`useState` + `useEffect`, auto 4,5 s, points, légende, réarmement timer)

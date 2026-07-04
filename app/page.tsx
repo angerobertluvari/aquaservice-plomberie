@@ -1,9 +1,23 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Pourquoi from "@/components/Pourquoi";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import FloatingEmergency from "@/components/FloatingEmergency";
+
 export default function Home() {
   return (
-    <main className="mx-auto max-w-[1180px] px-[clamp(1.1rem,5vw,2.2rem)] py-24">
-      <p className="text-muted">
-        Aqua Service — socle en place. Les sections du site arrivent en Phase 2.
-      </p>
-    </main>
+    <>
+      <div className="mx-auto max-w-[1180px]">
+        <Header />
+        <Hero />
+        <Services />
+        <Pourquoi />
+        <Contact />
+      </div>
+      <Footer />
+      <FloatingEmergency />
+    </>
   );
 }
