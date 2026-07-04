@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  /* ---- Couleurs : encre / texte ---- */
+  --color-ink: #0f2e46;
+  --color-ink-soft: #4d6d80;
+  --color-muted: #5b7a91;
+  --color-muted-2: #6b8698;
+
+  /* ---- Aqua / turquoise ---- */
+  --color-aqua: #16a3b8;
+  --color-aqua-deep: #0e7c96;
+  --color-aqua-light: #eef8fb;
+  --color-aqua-line: #d6ebf1;
+  --color-aqua-line-2: #e2eff4;
+  --color-aqua-sky: #3fc6d8;
+
+  /* ---- Corail (urgence) ---- */
+  --color-coral: #f0603a;
+  --color-coral-deep: #d94a28;
+  --color-coral-soft: #f0916f;
+
+  /* ---- Vert validation ---- */
+  --color-success: #1a9e6f;
+  --color-success-bg: #eafaf3;
+  --color-success-line: #bfead6;
+  --color-success-ink: #166b4c;
+  --color-mint: #3fd6a8;
+
+  /* ---- Sable (touche corse) ---- */
+  --color-sand: #e9b872;
+
+  /* ---- Marine footer ---- */
+  --color-navy: #0b2438;
+  --color-navy-2: #123f5e;
+  --color-accent-light: #5fd7e8;
+  --color-footer-ink: #9fbccd;
+  --color-footer-muted: #6d8ea1;
+
+  /* ---- Blancs cassés ---- */
+  --color-offwhite: #fbfdfe;
+  --color-offwhite-2: #f6fbfd;
+  --color-line-soft: #e6f1f5;
+
+  /* ---- Typographie ---- */
+  --font-display: var(--font-bricolage), system-ui, sans-serif;
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+
+  /* ---- Rayons ---- */
+  --radius-field: 11px;
+  --radius-btn: 14px;
+  --radius-card: 22px;
+  --radius-visual: 24px;
+  --radius-block: 28px;
+
+  /* ---- Ombres ---- */
+  --shadow-card: 0 20px 40px -34px rgba(15, 46, 70, 0.4);
+  --shadow-coral: 0 12px 26px rgba(240, 96, 58, 0.32);
+  --shadow-visual: 0 30px 60px -30px rgba(14, 124, 150, 0.4);
+}
+
+/* ---- Base ---- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+}
+
+/* ---- Keyframes ---- */
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulseRing {
+  0% {
+    box-shadow: 0 10px 30px rgba(240, 96, 58, 0.35), 0 0 0 0 rgba(240, 96, 58, 0.45);
+  }
+  70% {
+    box-shadow: 0 10px 30px rgba(240, 96, 58, 0.35), 0 0 0 16px rgba(240, 96, 58, 0);
+  }
+  100% {
+    box-shadow: 0 10px 30px rgba(240, 96, 58, 0.35), 0 0 0 0 rgba(240, 96, 58, 0);
+  }
+}

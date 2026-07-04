@@ -13,14 +13,14 @@ Statut : `[ ]` à faire · `[~]` en cours · `[x]` terminé
 - [x] Commit initial
 > Gate : le propriétaire crée le dépôt GitHub vierge et pousse.
 
-## Phase 1 — Scaffold Next.js  — `/aqua-phase-1-scaffold`
-- [ ] `create-next-app` (App Router, TS, Tailwind, ESLint) dans le dépôt existant
-- [ ] Fonts `next/font` : Bricolage Grotesque + Manrope
-- [ ] Design tokens (couleurs, radius, ombres) dans `tailwind.config.ts`
-- [ ] `app/layout.tsx` (metadata de base, `scroll-behavior: smooth`, fonts)
-- [ ] `app/globals.css` nettoyé, base body/typo
-- [ ] `.env.example`
-- [ ] Le projet build (`npm run build`) et `npm run dev` fonctionne
+## Phase 1 — Scaffold Next.js  — `/aqua-phase-1-scaffold` ✅
+- [x] `create-next-app` (Next 16, App Router, TS, Tailwind v4, ESLint) fusionné dans le dépôt
+- [x] Fonts `next/font` : Bricolage Grotesque + Manrope (variables CSS)
+- [x] Design tokens (couleurs, radius, ombres, fonts) dans `@theme` de `app/globals.css` (Tailwind v4)
+- [x] `app/layout.tsx` (`lang="fr"`, metadata de base, fonts, smooth scroll)
+- [x] `app/globals.css` nettoyé, base body/typo + keyframes `pulseRing`/`floatY`
+- [x] `.env.example`
+- [x] `npm run build` réussit + `npm run lint` propre
 
 ## Phase 2 — Sections statiques (pixel-faithful)  — `/aqua-phase-2-sections`
 - [ ] `Header` (sticky, logo goutte, bouton téléphone)
