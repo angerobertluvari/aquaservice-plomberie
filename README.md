@@ -30,10 +30,16 @@ Copier `.env.example` vers `.env.local` :
 RESEND_API_KEY=re_xxx          # clé API Resend (formulaire de contact)
 CONTACT_TO_EMAIL=...           # email destinataire des demandes
 CONTACT_FROM_EMAIL=...         # (optionnel) expéditeur — domaine vérifié Resend
+NEXT_PUBLIC_SITE_URL=...       # URL de prod (SEO, sitemap, robots) — sans slash final
 ```
 
 En l'absence de `RESEND_API_KEY`, le formulaire fonctionne en mode dégradé
 (la demande est journalisée côté serveur, pas d'envoi réel) — pratique en local.
+
+## Déploiement
+
+Guide complet (variables d'env, étapes Vercel, configuration Resend, checklist) :
+voir [`DEPLOYMENT.md`](DEPLOYMENT.md).
 
 ## Structure
 
