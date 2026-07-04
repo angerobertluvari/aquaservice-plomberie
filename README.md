@@ -29,6 +29,7 @@ Copier `.env.example` vers `.env.local` :
 ```
 RESEND_API_KEY=re_xxx          # clé API Resend (formulaire de contact)
 CONTACT_TO_EMAIL=...           # email destinataire des demandes
+CONTACT_FROM_EMAIL=...         # (optionnel) expéditeur — domaine vérifié Resend
 ```
 
 En l'absence de `RESEND_API_KEY`, le formulaire fonctionne en mode dégradé

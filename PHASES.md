@@ -38,10 +38,10 @@ Statut : `[ ]` à faire · `[~]` en cours · `[x]` terminé
 - [x] Toggle Devis/Urgence (état + styles actifs)
 - [x] Formulaire : React Hook Form + Zod, états loading/success/error, bandeau succès
 
-## Phase 4 — API contact / email  — `/aqua-phase-4-api`
-- [ ] `app/api/contact/route.ts` (validation Zod côté serveur)
-- [ ] Intégration Resend + mode dégradé sans clé
-- [ ] Branchement du formulaire (POST, gestion erreurs)
+## Phase 4 — API contact / email  — `/aqua-phase-4-api` ✅
+- [x] `app/api/contact/route.ts` (validation Zod côté serveur)
+- [x] Intégration Resend + mode dégradé sans clé
+- [x] Branchement du formulaire (POST, gestion erreurs)
 
 ## Phase 5 — SEO & finitions  — `/aqua-phase-5-seo`
 - [ ] `metadata` complet (title/description « plombier Corse-du-Sud »), OpenGraph

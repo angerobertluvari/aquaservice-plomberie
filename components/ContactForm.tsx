@@ -35,9 +35,12 @@ export default function ContactForm() {
   const onSubmit = async (data: ContactInput) => {
     setStatus("loading");
     try {
-      // Phase 3 : envoi simulé. Le POST vers /api/contact arrive en Phase 4.
-      await new Promise((r) => setTimeout(r, 700));
-      void data;
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error("request failed");
       setStatus("success");
       reset({ type: data.type, name: "", phone: "", email: "", message: "" });
     } catch {
