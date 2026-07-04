@@ -50,8 +50,8 @@ Statut : `[ ]` à faire · `[~]` en cours · `[x]` terminé
 - [x] Favicon / icônes, accessibilité (labels, aria), remplacement icônes texte → Lucide
 - [x] Page mentions légales / RGPD + lien footer (confirmé)
 
-## Phase 6 — Préparation déploiement  — `/aqua-phase-6-deploy`
-- [ ] `npm run build` propre, lint OK, pas d'erreurs TS
-- [ ] Vérification finale vs screenshots
-- [ ] Doc des variables d'env pour Vercel
-- [ ] Prêt à déployer (déploiement Vercel fait en dernier, avec le propriétaire)
+## Phase 6 — Préparation déploiement  — `/aqua-phase-6-deploy` ✅
+- [x] `npm run build` propre, lint OK, pas d'erreurs TS
+- [x] Vérification finale vs screenshots (logo mis à jour à la demande du client)
+- [x] Doc des variables d'env pour Vercel (`DEPLOYMENT.md`)
+- [x] Prêt à déployer (déploiement Vercel fait en dernier, avec le propriétaire)
